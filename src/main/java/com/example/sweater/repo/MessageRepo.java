@@ -1,4 +1,4 @@
-package com.example.sweater.repos;
+package com.example.sweater.repo;
 
 import com.example.sweater.domain.Message;
 import org.springframework.data.repository.CrudRepository;
