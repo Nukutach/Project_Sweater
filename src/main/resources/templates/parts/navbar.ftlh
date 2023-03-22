@@ -17,13 +17,18 @@
             </li>
             <#if isAdmin>
             <li class="nav-item">
-                <a class="nav-link" href="/user">User list</a>
+                <a class="nav-link" href="/user">User List</a>
+            </li>
+            </#if>
+            <#if user??>
+            <li class="nav-item">
+                <a class="nav-link" href="/user/profile">Profile</a>
             </li>
             </#if>
         </ul>
 
         <div class="navbar-text mr-3" >${name}</div>
-        <#if known>
+        <#if user??>
             <@l.logout />
         <#else>
             <a class="btn btn-primary" href="/login" role="button">Login</a>
